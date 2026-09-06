@@ -1,5 +1,5 @@
 // App State
-let currentLang = localStorage.getItem('el3tra_lang') || 'ar';
+let currentLang = localStorage.getItem('el3tra_lang') || 'en';
 
 document.addEventListener('DOMContentLoaded', () => {
   // Ensure Light mode is enforced

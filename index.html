@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eslam Ali Elattar | Senior Video Editor & Motion Graphics Designer</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+  
+  <!-- Custom UI Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <!-- Lucide SVG Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-zinc-100 min-h-screen selection:bg-zinc-900 selection:text-white dark:selection:bg-white dark:selection:text-zinc-900 transition-colors duration-300">
+
+  <!-- Background Grid Pattern -->
+  <div class="fixed inset-0 pointer-events-none bg-grid-pattern opacity-40 z-0"></div>
+
+  <!-- Glass Navbar -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 flex items-center justify-center font-black text-xl shadow-md group-hover:scale-105 transition-transform">
+          E
+        </div>
+        <div>
+          <span class="font-extrabold text-lg text-zinc-900 dark:text-white tracking-tight block leading-none">Eslam Elattar</span>
+          <span class="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 block mt-1">Video Editor & Motion Designer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-zinc-600 dark:text-zinc-400">
+        <a href="#specialties" class="hover:text-zinc-900 dark:hover:text-white transition-colors" data-i18n="navSpecialties">التخصصات</a>
+        <a href="#featured-videos" class="hover:text-zinc-900 dark:hover:text-white transition-colors" data-i18n="navFeatured">فيديوهات مميزة</a>
+        <a href="#tools" class="hover:text-zinc-900 dark:hover:text-white transition-colors" data-i18n="navTools">البرامج والمهارات</a>
+        <a href="#experience" class="hover:text-zinc-900 dark:hover:text-white transition-colors" data-i18n="navExperience">الخبرات</a>
+      </nav>
+
+      <!-- Action Buttons & Language Switcher -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        
+        <!-- Language Switcher -->
+        <button id="lang-toggle-btn" class="px-3.5 py-2 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800/90 text-xs font-bold text-zinc-800 dark:text-white hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-all shadow-xs cursor-pointer">
+          English
+        </button>
+
+        <!-- Google Drive Portfolio Link (Header) -->
+        <a href="https://drive.google.com/drive/u/1/folders/1RXbF7pfRgxLCROmLE9jHVlgyJXf-Mnvm" target="_blank" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-amber-500 hover:bg-amber-600 shadow-sm transition-all">
+          <i data-lucide="folder-open" class="w-4 h-4"></i>
+          <span>جوجل درايف</span>
+        </a>
+
+        <!-- Instagram Button (Header) -->
+        <a href="https://www.instagram.com/el3tra_content/" target="_blank" class="hidden md:inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 shadow-sm hover:opacity-95 transition-opacity">
+          <i data-lucide="instagram" class="w-4 h-4"></i>
+          <span>@el3tra_content</span>
+        </a>
+
+        <!-- Download CV Button (Header) -->
+        <a href="cv-preview.html" target="_blank" class="btn-ui-primary text-xs !py-2 !px-3 sm:!px-4">
+          <i data-lucide="file-text" class="w-4 h-4"></i>
+          <span data-i18n="btnDownloadCv">تحميل الـ CV</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="relative z-10 pt-28 pb-20">
+
+    <!-- HERO SECTION -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Hero Text & CTAs -->
+        <div class="lg:col-span-7 space-y-6 text-right dir-rtl">
+          
+          <!-- Badges -->
+          <div class="flex flex-wrap gap-2">
+            <span class="ui-badge ui-badge-primary">
+              <i data-lucide="award" class="w-4 h-4 text-amber-400"></i>
+              <span id="hero-badge-text" data-i18n="heroBadge">خبرة +5 سنوات | بكالوريوس نظم معلومات إدارية</span>
+            </span>
+          </div>
+
+          <!-- Main Title -->
+          <div class="space-y-2">
+            <h1 id="hero-title" class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-zinc-900 dark:text-white tracking-tight leading-[1.2]">
+              مونتير أول | مصمم موشن جرافيك
+            </h1>
+            <h2 class="text-xl sm:text-2xl font-bold text-zinc-600 dark:text-zinc-400">Eslam Ali Fahmy Elattar</h2>
+          </div>
+
+          <!-- Subtitle -->
+          <p id="hero-subtitle" class="text-base sm:text-lg text-zinc-600 dark:text-zinc-400 font-medium leading-relaxed max-w-2xl" data-i18n="heroSubtitle">
+            إسلام علي فهمي العطار - مونتير أول ومصمم موشن جرافيك متخصص في صناعة المحتوى الإعلاني، الكيناتيك تيبوجرافي، والتلوين السينمائي في أسواق الإمارات والوطن العربي.
+          </p>
+
+          <!-- Clean Harmonized Contact Badges Bar -->
+          <div class="flex flex-wrap items-center gap-3 text-xs font-semibold text-zinc-700 dark:text-zinc-300">
+            <a href="tel:+201125864424" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-400 transition-colors shadow-2xs">
+              <i data-lucide="phone" class="w-4 h-4 text-blue-600 dark:text-blue-400"></i>
+              <span>+20 112 586 4424</span>
+            </a>
+            <a href="mailto:eslamelattar1@gmail.com" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-400 transition-colors shadow-2xs">
+              <i data-lucide="mail" class="w-4 h-4 text-blue-600 dark:text-blue-400"></i>
+              <span>eslamelattar1@gmail.com</span>
+            </a>
+          </div>
+
+          <!-- Perfectly Harmonized 4-Button Action Toolbar -->
+          <div class="pt-2 grid grid-cols-2 sm:flex sm:flex-wrap items-center gap-3">
+            
+            <!-- 1. Google Drive Portfolio -->
+            <a href="https://drive.google.com/drive/u/1/folders/1RXbF7pfRgxLCROmLE9jHVlgyJXf-Mnvm" target="_blank" class="px-4 py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs sm:text-sm inline-flex items-center justify-center gap-2 shadow-sm hover:shadow-md transition-all">
+              <i data-lucide="folder-open" class="w-4 h-4"></i>
+              <span data-i18n="btnDrivePortfolio">Google Drive Portfolio</span>
+            </a>
+
+            <!-- 2. Instagram Profile -->
+            <a href="https://www.instagram.com/el3tra_content/" target="_blank" class="px-4 py-3 rounded-xl bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:opacity-95 text-white font-bold text-xs sm:text-sm inline-flex items-center justify-center gap-2 shadow-sm hover:shadow-md transition-all">
+              <i data-lucide="instagram" class="w-4 h-4"></i>
+              <span>@el3tra_content</span>
+            </a>
+
+            <!-- 3. Download CV -->
+            <a href="cv-preview.html" target="_blank" class="px-4 py-3 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 hover:border-zinc-400 text-zinc-900 dark:text-white font-bold text-xs sm:text-sm inline-flex items-center justify-center gap-2 shadow-sm hover:shadow-md transition-all">
+              <i data-lucide="file-text" class="w-4 h-4 text-zinc-700 dark:text-zinc-300"></i>
+              <span data-i18n="btnDownloadCv">تحميل الـ CV</span>
+            </a>
+
+            <!-- 4. Featured Videos -->
+            <a href="#featured-videos" class="px-4 py-3 rounded-xl bg-zinc-900 dark:bg-white hover:bg-zinc-800 dark:hover:bg-zinc-200 text-white dark:text-zinc-900 font-bold text-xs sm:text-sm inline-flex items-center justify-center gap-2 shadow-sm hover:shadow-md transition-all">
+              <i data-lucide="play-circle" class="w-4 h-4 text-amber-400 dark:text-amber-600"></i>
+              <span data-i18n="btnViewPortfolio">الفيديوهات الحية</span>
+            </a>
+
+          </div>
+
+          <!-- Hero Metrics Bar -->
+          <div id="hero-stats-container" class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-zinc-200 dark:border-zinc-800">
+            <!-- Rendered dynamically by app.js -->
+          </div>
+
+        </div>
+
+        <!-- Hero User Profile Photo in UI Frame -->
+        <div class="lg:col-span-5">
+          <div class="ui-card p-3 bg-white dark:bg-zinc-900 shadow-2xl relative group animate-float-ui">
+            <div class="ui-frame aspect-[4/5] sm:aspect-video lg:aspect-[4/5] rounded-xl overflow-hidden relative">
+              
+              <!-- Frame Header / Dots -->
+              <div class="ui-frame-dots justify-between">
+                <div class="flex items-center gap-1.5">
+                  <div class="ui-frame-dot red"></div>
+                  <div class="ui-frame-dot yellow"></div>
+                  <div class="ui-frame-dot green"></div>
+                </div>
+                <div class="text-[10px] font-mono text-zinc-400 bg-zinc-900 px-2.5 py-0.5 rounded border border-zinc-800 flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span>Eslam Elattar Profile</span>
+                </div>
+              </div>
+
+              <!-- User Personal Photo Image -->
+              <img src="assets/images/profile.jpg" alt="Eslam Ali Fahmy Elattar" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+              
+              <!-- Animated Cursor Overlay -->
+              <div class="absolute inset-0 pointer-events-none overflow-hidden">
+                <div class="animate-mock-cursor absolute">
+                  <div class="w-6 h-6 text-white drop-shadow-md">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-zinc-900 stroke-white stroke-2">
+                      <path d="M3 3l7 18 3-7 7-3L3 3z"/>
+                    </svg>
+                  </div>
+                  <div class="mt-1 ml-4 px-2 py-0.5 bg-blue-600 text-white text-[9px] font-bold rounded shadow-md whitespace-nowrap">
+                    Senior Video Editor & Motion Designer
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Profile Badge Overlay -->
+              <div class="absolute bottom-4 left-4 right-4 bg-zinc-950/90 backdrop-blur-md p-3 rounded-xl border border-zinc-800/80 shadow-2xl flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <div>
+                    <div class="text-xs font-extrabold text-white">Eslam Ali Elattar</div>
+                    <div class="text-[10px] text-zinc-400 font-mono">Video Editor & Motion Designer</div>
+                  </div>
+                </div>
+                <a href="https://drive.google.com/drive/u/1/folders/1RXbF7pfRgxLCROmLE9jHVlgyJXf-Mnvm" target="_blank" class="px-3 py-1.5 bg-amber-500 text-white text-xs font-bold rounded-lg hover:bg-amber-600 transition-colors shadow-xs flex items-center gap-1">
+                  <i data-lucide="folder" class="w-3.5 h-3.5"></i> الدرايف
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SPECIALTIES SECTION -->
+    <section id="specialties" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-zinc-200 dark:border-zinc-800 reveal-on-scroll">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="ui-badge" data-i18n="navSpecialties">التخصصات</span>
+        <h2 class="text-3xl font-extrabold text-zinc-900 dark:text-white" data-i18n="specialtiesTitle">التخصصات والخدمات الرئيسية</h2>
+        <p class="text-zinc-600 dark:text-zinc-400 text-sm font-medium" data-i18n="specialtiesSub">حلول بصرية مصممة خصيصاً للبراندات الحديثة، الوكالات الإعلانية، والشركات الناشئة.</p>
+      </div>
+
+      <div id="specialties-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+
+    <!-- 3 FEATURED VIDEOS SHOWCASE SECTION -->
+    <section id="featured-videos" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-zinc-200 dark:border-zinc-800 reveal-on-scroll">
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <span class="ui-badge ui-badge-primary">
+          <i data-lucide="film" class="w-4 h-4 text-amber-400"></i>
+          <span data-i18n="navFeatured">الفيديوهات الحية المميزة</span>
+        </span>
+        <h2 class="text-3xl font-extrabold text-zinc-900 dark:text-white" data-i18n="featuredTitle">أحدث الأعمال والمشاريع المميزة</h2>
+        <p class="text-zinc-600 dark:text-zinc-400 text-sm font-medium" data-i18n="featuredSub">انقر على أي فيديو لمشاهدته بالجودة الكاملة والصوت.</p>
+      </div>
+
+      <!-- 3 Featured Videos Grid (30 Years in Center) -->
+      <div id="featured-videos-grid" class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+
+    <!-- TOOLS & SKILLS SECTION -->
+    <section id="tools" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-zinc-200 dark:border-zinc-800 reveal-on-scroll">
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <span class="ui-badge" data-i18n="navTools">البرامج والمهارات</span>
+        <h2 class="text-3xl font-extrabold text-zinc-900 dark:text-white" data-i18n="toolsTitle">برامج وأدوات العمل</h2>
+        <p class="text-zinc-600 dark:text-zinc-400 text-sm font-medium" data-i18n="toolsSub">أحدث البرامج والتقنيات العالمية المستخدمة لضمان أعلى جودة بعد الإنتاج.</p>
+      </div>
+
+      <div id="tools-container" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 border-t border-zinc-200 dark:border-zinc-800 reveal-on-scroll">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-5 space-y-4">
+          <span class="ui-badge" data-i18n="navExperience">الخبرات</span>
+          <h2 class="text-3xl font-extrabold text-zinc-900 dark:text-white" data-i18n="expTitle">الخبرات والمسار المهني</h2>
+          <p class="text-zinc-600 dark:text-zinc-400 text-sm font-medium leading-relaxed" data-i18n="expSub">
+            أكثر من 5 سنوات من الإبداع المستمر في إنشاء الموشن جرافيك والمونتاج الاحترافي.
+          </p>
+
+          <div class="p-5 bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 space-y-2 shadow-xs">
+            <div class="font-extrabold text-zinc-900 dark:text-white text-sm">المؤهل الدراسي (Education)</div>
+            <div class="text-xs font-semibold text-zinc-700 dark:text-zinc-300">خريج معهد الحاسبات - بكالوريوس نظم معلومات إدارية</div>
+            <div class="text-xs text-zinc-500 dark:text-zinc-400 font-mono">Graduate of Computer Institute (MIS)</div>
+          </div>
+
+          <div class="p-6 bg-zinc-900 text-white rounded-2xl border border-zinc-800 space-y-3 mt-4">
+            <div class="text-amber-400 font-bold text-sm">🇦🇪 UAE & Gulf Market Track Record</div>
+            <p class="text-zinc-300 text-xs leading-relaxed">
+              خبرة واسعة في العمل مع وكالات التسويق في دبي وأبوظبي والرياض لتنفيذ محتوى متوافق تماماً مع الهويات الخليجية والعالمية.
+            </p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div id="experience-timeline" class="space-y-10">
+            <!-- Rendered dynamically by app.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- GOOGLE DRIVE PORTFOLIO & INSTAGRAM BANNER -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 reveal-on-scroll">
+      <div class="ui-card p-8 lg:p-12 bg-gradient-to-br from-zinc-900 via-zinc-900 to-black text-white relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
+        
+        <div class="space-y-4 max-w-xl text-center md:text-right">
+          <div class="flex flex-wrap items-center justify-center md:justify-start gap-2">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold border border-amber-500/30">
+              <i data-lucide="folder" class="w-3.5 h-3.5"></i> Google Drive Portfolio
+            </span>
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-pink-500/20 text-pink-300 text-xs font-semibold border border-pink-500/30">
+              <i data-lucide="instagram" class="w-3.5 h-3.5"></i> @el3tra_content
+            </span>
+          </div>
+
+          <h2 class="text-3xl font-extrabold tracking-tight">تصفح البورتفوليو الكامل وحساب إنستغرام</h2>
+          <p class="text-zinc-400 text-sm font-medium leading-relaxed">
+            يمكنك الاطلاع على كافة أعمال الموشن جرافيك والمونتاج المنظمة على جوجل درايف أو متابعة جديد الريلز على حساب @el3tra_content
+          </p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4">
+          <a href="https://drive.google.com/drive/u/1/folders/1RXbF7pfRgxLCROmLE9jHVlgyJXf-Mnvm" target="_blank" class="px-6 py-3.5 bg-amber-500 hover:bg-amber-600 text-white font-bold text-sm rounded-xl shadow-lg flex items-center gap-2 transition-all">
+            <i data-lucide="folder-open" class="w-5 h-5"></i>
+            <span>فتح فولدر الدرايف</span>
+          </a>
+
+          <a href="https://www.instagram.com/el3tra_content/" target="_blank" class="btn-ui-instagram !py-3.5 !px-8 text-sm">
+            <i data-lucide="instagram" class="w-5 h-5"></i>
+            <span>حساب إنستغرام</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 py-12 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 flex items-center justify-center font-bold text-sm">
+          E
+        </div>
+        <div>
+          <span class="font-extrabold text-zinc-900 dark:text-white text-sm block">Eslam Ali Fahmy Elattar</span>
+          <span class="text-[11px] text-zinc-500 dark:text-zinc-400 block">Phone: +20 112 586 4424 | Email: eslamelattar1@gmail.com</span>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-6 text-sm font-semibold text-zinc-600 dark:text-zinc-400">
+        <a href="https://drive.google.com/drive/u/1/folders/1RXbF7pfRgxLCROmLE9jHVlgyJXf-Mnvm" target="_blank" class="hover:text-amber-600 flex items-center gap-1.5">
+          <i data-lucide="folder" class="w-4 h-4 text-amber-500"></i> Drive Portfolio
+        </a>
+        <a href="https://www.instagram.com/el3tra_content/" target="_blank" class="hover:text-pink-600 flex items-center gap-1.5">
+          <i data-lucide="instagram" class="w-4 h-4 text-pink-600"></i> Instagram
+        </a>
+        <a href="cv-preview.html" target="_blank" class="hover:text-zinc-900 dark:hover:text-white flex items-center gap-1.5">
+          <i data-lucide="file-text" class="w-4 h-4"></i> Official CV
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- VIDEO POPUP MODAL PLAYER -->
+  <div id="video-modal" class="fixed inset-0 z-50 modal-backdrop hidden items-center justify-center p-4">
+    <div id="modal-video-container" class="w-full flex items-center justify-center">
+      <!-- Injected dynamically by app.js -->
+    </div>
+  </div>
+
+
+  <!-- App JavaScript files -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
